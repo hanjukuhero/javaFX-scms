@@ -28,3 +28,8 @@ mybatis-plus:
     cache-enabled: true
     lazy-loading-enabled: true
     aggressive-lazy-loading: true
+
+logging:
+  config: classpath:log4j2.xml
+  level:
+    com.demo.mybatisplus.mapper: debug
