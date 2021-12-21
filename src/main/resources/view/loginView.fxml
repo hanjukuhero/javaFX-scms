@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gxjkzw.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <Label text="信号集中监测设备系统" />
+            <Label text="（V1.0.0）" />
+            <JFXTextField fx:id="usernameField" alignment="CENTER" promptText="请输入用户名称" />
+            <JFXPasswordField fx:id="passwordField" alignment="CENTER" promptText="请输入登录密码" />
+            <Hyperlink text="修改密码">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="200.0" top="10.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <JFXButton fx:id="btnLogin" onAction="#login" style="-fx-background-color: #003366;" text="登录" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
